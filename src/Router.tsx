@@ -5,7 +5,7 @@ import App from "./App";
 export default function Router() {
   return (
     <Routes>
-      {/* <Route path="/" element={<App />} /> */}
+      <Route path="/" element={<App />} />
       <Route path="/resume" element={<Resume />} />
     </Routes>
   );
