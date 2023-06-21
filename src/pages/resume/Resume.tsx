@@ -1,5 +1,6 @@
 import Profile from "../../common_components/Profile";
 import TabButton from "./resumeMolecules/TabButton";
+import ContentSection from "./resumeMolecules/ContentSection";
 import "./Resume.css";
 
 export default function Resume() {
@@ -7,6 +8,7 @@ export default function Resume() {
     <>
       <Profile />
       <TabButton />
+      <ContentSection />
     </>
   );
 }

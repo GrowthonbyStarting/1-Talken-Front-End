@@ -1,15 +1,15 @@
 .profile_container {
   position: fixed;
-  top: 180px;
-  left: 5vw;
+  top: 17vh;
+  left: 6vw;
   width: fit-content;
   height: 630px;
 
   .profile_bar {
-    width: 15vw;
+    width: 13vw;
     background: rgb(255, 255, 255);
     border-radius: 20px;
-    padding: 39.994px 32px;
+    padding: 40px 32px;
     display: flex;
     flex-direction: column;
     -webkit-box-align: center;
@@ -36,7 +36,7 @@
       margin-top: 40px;
     }
     .profile_bar_contact {
-      width: 240px;
+      width: 100%;
       margin-top: 40px;
     }
     .profile_bar_hashtag {
