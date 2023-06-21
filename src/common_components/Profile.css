@@ -1,13 +1,13 @@
 .profile_container {
-  position: sticky;
+  position: fixed;
   top: 180px;
-  left: 0px;
+  left: 5vw;
   width: -moz-fit-content;
   width: fit-content;
   height: 630px;
 }
 .profile_container .profile_bar {
-  width: 300px;
+  width: 15vw;
   background: rgb(255, 255, 255);
   border-radius: 20px;
   padding: 39.994px 32px;

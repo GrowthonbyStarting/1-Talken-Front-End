@@ -12,7 +12,7 @@ export default function Header() {
     <nav className="header">
       <div className="header_container">
         <div className="header_logo" onClick={() => navigate("/")}>
-          LOGO
+          <img src="/images/logo.png" alt="" />
         </div>
         <button type="button" onClick={clickHandler} className="resume_button">
           내 이력서
