@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import "./Header.css";
 import { Link, useNavigate } from "react-router-dom";
+import "./Header.css";
 
 export default function Header() {
   const [scrollY, setScrollY] = useState(0);

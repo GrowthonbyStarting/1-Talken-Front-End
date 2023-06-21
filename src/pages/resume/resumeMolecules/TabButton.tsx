@@ -1,17 +1,10 @@
 import { useState } from "react";
-import styled from "styled-components";
-
-const MyNav = styled("ul")`
-  display: flex;
-  width: 50%;
-  justify-content: space-between;
-  color: black;
-`;
+import "./TabButton.css";
 
 export default function TabButton() {
   return (
     <nav>
-      <MyNav>
+      <ul className="tab">
         <li>
           <button onClick={() => {}}>포트폴리오</button>
         </li>
@@ -24,7 +17,7 @@ export default function TabButton() {
         <li>
           <button onClick={() => {}}>피드백보기</button>
         </li>
-      </MyNav>
+      </ul>
     </nav>
   );
 }
