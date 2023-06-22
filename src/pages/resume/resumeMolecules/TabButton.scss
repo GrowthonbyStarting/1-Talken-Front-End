@@ -2,19 +2,23 @@
   position: absolute;
   display: flex;
   width: 40%;
-  color: black;
   list-style: none;
   padding: 0.5rem;
   top: 40vh;
   right: 30vw;
+
   li {
+    margin: 0 0.5rem;
     button {
-      color: black;
+      color: gray;
       font-size: 1rem;
-      font-weight: 500;
+      font-weight: 800;
       border: none;
       background: none;
       cursor: pointer;
+    }
+    button:focus {
+      color: black;
     }
   }
 }
