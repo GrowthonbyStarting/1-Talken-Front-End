@@ -1,0 +1,52 @@
+.container {
+  margin-top: 1.5rem;
+  min-width: 150px;
+  box-shadow: 0 4px 5px 0 #00000026;
+  position: relative;
+  border-radius: 30px;
+
+  #dropdown {
+    left: 0;
+    visibility: hidden;
+    position: absolute;
+    &:checked + label {
+      .icon {
+        transform: rotate(-180deg);
+      }
+    }
+    &:checked + label + div {
+      display: block;
+      border-top: 1px solid #00000026;
+    }
+  }
+
+  .icon {
+    margin-top: 0.2rem;
+    transition: transform 300ms ease-out;
+  }
+  .dropdownLabel {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+  }
+  .content {
+    display: none;
+    position: absolute;
+    width: 85%;
+    left: 1rem;
+    background: white;
+    box-shadow: 0 4px 5px 0 #00000026;
+    ul {
+      list-style-type: none;
+      padding: 10px;
+      margin: 0;
+      li {
+        margin: 0.8rem 0;
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.01);
+        }
+      }
+    }
+  }
+}

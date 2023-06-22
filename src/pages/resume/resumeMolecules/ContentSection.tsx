@@ -7,6 +7,7 @@ import Jasoseo from "./Jasoseo";
 
 const MyContainer = styled("div")`
   position: absolute;
+  display: flex;
   right: 3vw;
   top: 50vh;
   width: 70vw;
