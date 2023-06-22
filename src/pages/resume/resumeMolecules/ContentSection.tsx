@@ -12,7 +12,7 @@ const MyContainer = styled("div")`
 export default function ContentSection() {
   return (
     <MyContainer>
-      <div>container</div>
+      <div></div>
     </MyContainer>
   );
 }
