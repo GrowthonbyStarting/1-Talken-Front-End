@@ -37,7 +37,7 @@
   display: flex;
   flex-direction: column;
   padding: 60px 70px;
-  background-color: rgb(255, 255, 255);
+  background-color: #efefef;
   width: 581px;
 }
 .login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .kakaologin_btn {
@@ -78,7 +78,7 @@
   font-weight: 600;
   color: rgb(84, 87, 94);
   position: absolute;
-  background-color: rgb(255, 255, 255);
+  background-color: #e8e8e8;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -88,26 +88,35 @@
   width: 100%;
   margin-bottom: 1rem;
 }
-.login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .inputContainer .styledInputContainer {
-  width: 100%;
-  border: 1px solid rgb(230, 233, 238);
-  border-radius: 10px;
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 48px;
-  padding: 0px 14.995px;
-}
 .login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .inputContainer .styledInputContainer input {
   width: 100%;
   height: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: rgb(0, 0, 0);
-  font-weight: 400;
   border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: #555;
+  padding: 15px 5px 10px 20px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+  border-radius: 25px;
+}
+.login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .inputContainer .styledInputContainer input::-moz-placeholder {
+  color: #555;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .inputContainer .styledInputContainer input::placeholder {
+  color: #555;
+  transition: all 0.3s ease;
+}
+.login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .inputContainer .styledInputContainer input:focus::-moz-placeholder {
+  color: #999;
+}
+.login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .inputContainer .styledInputContainer input:focus::placeholder {
+  color: #999;
 }
 .login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .loginTrigger {
   display: flex;
@@ -116,10 +125,10 @@
   align-items: center;
 }
 .login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .loginTrigger button {
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(230, 233, 238);
+  background-color: #e8e8e8;
+  border: 1px solid rgb(118, 120, 122);
   color: rgb(84, 87, 94);
-  border-radius: 15.001px;
+  border-radius: 15px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 600;

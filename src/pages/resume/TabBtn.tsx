@@ -5,27 +5,38 @@ export default function TabBtn() {
   const dispatch = useDispatch();
   return (
     <>
-      <div className="tab_container">
-        <div
-          className="tab_menu"
-          onClick={() => dispatch({ type: "포트폴리오" })}
-        >
-          포트폴리오
-        </div>
-        <div className="tab_menu" onClick={() => dispatch({ type: "이력서" })}>
-          이력서
-        </div>
-        <div
-          className="tab_menu"
-          onClick={() => dispatch({ type: "자기소개서" })}
-        >
-          자기소개서
-        </div>
-        <div
-          className="tab_menu"
-          onClick={() => dispatch({ type: "피드백보기" })}
-        >
-          피드백 보기
+      <div className="tab_wrraper">
+        <div className="tab_container">
+          <div className="menu_container">
+            <label
+              className="tab_menu"
+              onClick={() => dispatch({ type: "포트폴리오" })}
+            >
+              <input type="radio" name="radio" />
+              <span className="name">포트폴리오</span>
+            </label>
+            <label
+              className="tab_menu"
+              onClick={() => dispatch({ type: "이력서" })}
+            >
+              <input type="radio" name="radio" />
+              <span className="name">이력서</span>
+            </label>
+            <label
+              className="tab_menu"
+              onClick={() => dispatch({ type: "자기소개서" })}
+            >
+              <input type="radio" name="radio" />
+              <span className="name">자기소개서</span>
+            </label>
+            <label
+              className="tab_menu"
+              onClick={() => dispatch({ type: "피드백보기" })}
+            >
+              <input type="radio" name="radio" />
+              <span className="name">피드백보기</span>
+            </label>
+          </div>
         </div>
       </div>
       <div className="wrapper">

@@ -1,18 +1,45 @@
 .tab_container {
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 40px;
+  -webkit-box-align: center;
   position: relative;
 }
-.tab_container .tab_menu {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+.tab_container .menu_container {
+  width: 55%;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0.5rem;
+  background-color: #eee;
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+}
+.tab_container .menu_container .tab_menu {
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 15px;
   color: rgb(96, 105, 117);
   display: flex;
   align-items: center;
+  padding: 0.8rem 0.1rem;
   cursor: pointer;
+}
+.tab_container .menu_container .tab_menu input {
+  display: none;
+}
+.tab_container .menu_container .tab_menu .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.3rem 0.5rem;
+  color: rgb(51, 65, 85);
+  transition: all 0.15s ease-in-out;
 }
 
 .wrapper {
@@ -21,8 +48,13 @@
   justify-content: center;
 }
 .wrapper .border_line {
-  width: 45%;
+  width: 55%;
   margin-top: 15px;
   opacity: 0.2;
   border-bottom: 3px solid gray;
+}
+
+.tab_menu input:checked + .name {
+  background-color: #fff;
+  font-weight: 600;
 }/*# sourceMappingURL=TabBtn.css.map */

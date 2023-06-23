@@ -1,0 +1,19 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown .dropdown-button {
+  background-color: #eaeaea;
+  color: #333;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 8px;
+}/*# sourceMappingURL=DropdownBtn.css.map */

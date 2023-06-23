@@ -15,7 +15,9 @@ export default function Header() {
     <div
       className="headerContainer"
       style={
-        scrollY === 0 ? { background: "none" } : { backgroundColor: "white" }
+        scrollY === 0
+          ? { background: "none" }
+          : { backgroundColor: "whitesmoke" }
       }
     >
       <div className="header_content">
