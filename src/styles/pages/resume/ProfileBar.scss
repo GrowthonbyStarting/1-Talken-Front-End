@@ -1,0 +1,95 @@
+.profile_container {
+  position: fixed;
+  top: 17vh;
+  left: 6vw;
+  width: fit-content;
+  height: 630px;
+
+  .profile_bar {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+
+    .profile_bar_image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-image: url(http://k.kakaocdn.net/dn/bSojne/btshkaLuWOS/96qkKC3DSkJfKx7WXJ0jNk/img_110x110.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+
+    .profile_bar_name {
+      margin-top: 15px;
+    }
+    .profile_bar_job {
+      margin-top: 10px;
+    }
+    .profile_bar_borderline {
+      width: 240px;
+      height: 1px;
+      opacity: 0.3;
+      margin-top: 40px;
+      border-bottom: 2px solid gray;
+    }
+    .profile_bar_contact {
+      width: 100%;
+      margin-top: 40px;
+      h3 {
+        font-weight: 600;
+        font-size: 13.997px;
+        line-height: 16.992px;
+        color: rgb(190, 194, 201);
+      }
+      .contact {
+        width: 100%;
+        margin-top: 10px;
+        .phone {
+          display: flex;
+          -webkit-box-align: center;
+          align-items: center;
+          width: 100%;
+          gap: 15px;
+        }
+        .email {
+          margin-top: 16px;
+          align-items: flex-start;
+        }
+      }
+    }
+    .job_box {
+      margin-top: 40px;
+      width: 236px;
+      h3 {
+        font-weight: 600;
+        font-size: 13.997px;
+        line-height: 16.992px;
+        color: rgb(190, 194, 201);
+      }
+    }
+    .profile_bar_hashtag {
+      width: 100%;
+      span {
+        display: inline-block;
+        margin-top: 10.003px;
+        margin-right: 10.003px;
+      }
+      .hash_tag {
+        padding: 3.994px 6.01px;
+        border-radius: 8px;
+        background: rgb(239, 241, 245);
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        color: rgb(96, 105, 117);
+      }
+    }
+  }
+}

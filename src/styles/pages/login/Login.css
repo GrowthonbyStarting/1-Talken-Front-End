@@ -1,0 +1,140 @@
+.login__StyledLoginSectionWrapper {
+  background-color: rgb(247, 248, 250);
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  gap: 100px;
+}
+.login__StyledLoginSectionWrapper .LoginPage__StyledDescriptionWrapper {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+.login__StyledLoginSectionWrapper .LoginPage__StyledDescriptionWrapper .LoginPage__StyledBigTitle {
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 80px;
+  color: rgb(0, 0, 0);
+  text-align: right;
+}
+.login__StyledLoginSectionWrapper .LoginPage__StyledDescriptionWrapper .LoginPage__StyledSmallTitle {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  color: rgb(75, 77, 79);
+  margin-top: 35.199px;
+  text-align: right;
+}
+.login__StyledLoginSectionWrapper .loginbox {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 70px;
+  background-color: rgb(255, 255, 255);
+  width: 581px;
+}
+.login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .kakaologin_btn {
+  display: flex;
+  align-items: center;
+  background: rgb(251, 229, 77);
+  border-radius: 15px;
+  font-weight: 600;
+  padding: 5px 108px;
+  width: 100%;
+  gap: 8.001px;
+  cursor: pointer;
+  justify-content: center;
+  white-space: nowrap;
+}
+.login__StyledLoginSectionWrapper .loginbox .loginform_wrapper p {
+  font-size: 15.001px;
+  font-weight: 400;
+  margin-top: 17px;
+  text-align: center;
+}
+.login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .dividingline {
+  width: 100%;
+  height: 18px;
+  position: relative;
+  margin: 30px 0px;
+}
+.login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .dividingline hr {
+  width: 100%;
+  border: 1px solid rgb(239, 242, 248);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .dividingline span {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(84, 87, 94);
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0px 20.001px;
+}
+.login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .inputContainer {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .inputContainer .styledInputContainer {
+  width: 100%;
+  border: 1px solid rgb(230, 233, 238);
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 48px;
+  padding: 0px 14.995px;
+}
+.login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .inputContainer .styledInputContainer input {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  border: none;
+}
+.login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .loginTrigger {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+}
+.login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .loginTrigger button {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(230, 233, 238);
+  color: rgb(84, 87, 94);
+  border-radius: 15.001px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  padding: 15.001px 108px;
+  width: 100%;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .loginTrigger a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  color: dodgerblue;
+  box-sizing: border-box;
+  font-weight: 400;
+}/*# sourceMappingURL=Login.css.map */

@@ -1,0 +1,42 @@
+.view_container {
+  width: 100%;
+  height: inherit;
+  position: relative;
+  background: rgb(247, 248, 250);
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-bottom: 269px;
+  .view_background {
+    width: 100%;
+    height: 340px;
+    background: linear-gradient(
+      110.58deg,
+      rgb(49, 126, 255) 1.86%,
+      rgb(133, 32, 245) 94.44%
+    );
+    position: absolute;
+    top: 0px;
+  }
+  .view_content_container {
+    width: 90vw;
+    display: flex;
+    min-height: calc(1000px);
+    .profilebar_wrapper {
+      width: 100%;
+    }
+    .content_box {
+      width: 100%;
+      margin-top: 340px;
+      padding-left: 48px;
+      padding-top: 25px;
+      .tab_btn_wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+}

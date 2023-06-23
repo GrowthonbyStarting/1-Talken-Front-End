@@ -1,10 +1,9 @@
-import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import "./Header.css";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import "../styles/commonComp/Header.css";
 
 export default function Header() {
-  const [scrollY, setScrollY] = useState(0);
-  const navigate = useNavigate();
+  const [scrollY, setScrollY] = useState<number>(0);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -13,39 +12,37 @@ export default function Header() {
   }, []);
 
   return (
-    <nav className="header">
-      <div className="header_container">
-        <div
-          className="header_box"
-          style={
-            scrollY === 0
-              ? { background: "none" }
-              : { backgroundColor: "white" }
-          }
-        >
-          <div className="header_logo" onClick={() => navigate("/")}>
-            {scrollY === 0 ? (
-              <img src="/images/logoWhite.webp" alt="logoWhite" />
-            ) : (
-              <img src="/images/logo.png" alt="logoBlack" />
-            )}
-          </div>
+    <div
+      className="headerContainer"
+      style={
+        scrollY === 0 ? { background: "none" } : { backgroundColor: "white" }
+      }
+    >
+      <div className="header_content">
+        <Link to="/">
+          <img
+            src={`/assets/images/${
+              scrollY === 0 ? "logowhite.webp" : "logo.png"
+            }`}
+            alt="로고 화이트"
+            style={{ width: "103px", height: "24px" }}
+          />
+        </Link>
+        <div className="MenuBtn">
           <Link
-            to={"/api/resume"}
-            className="resume_button"
+            to="/api/resume"
             style={scrollY === 0 ? { color: "white" } : { color: "black" }}
           >
             내 이력서
           </Link>
           <Link
-            to={"/api/mypage"}
-            className="mypage_button"
+            to="/api/mypage"
             style={scrollY === 0 ? { color: "white" } : { color: "black" }}
           >
-            마이 페이지
+            마이페이지
           </Link>
         </div>
       </div>
-    </nav>
+    </div>
   );
 }

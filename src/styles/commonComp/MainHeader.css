@@ -1,0 +1,41 @@
+.headerContainer {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  position: fixed;
+  top: 0px;
+  z-index: 3;
+}
+.headerContainer .header_content {
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerContainer .header_content .loginBtn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgb(180, 180, 180);
+  background: rgba(242, 242, 242, 0.1);
+  border: 1px solid rgba(242, 242, 242, 0.2);
+  border-radius: 15px;
+  padding: 8.5px 20px;
+  cursor: pointer;
+}
+.headerContainer .header_content .loginBtn a {
+  font-weight: 600;
+  line-height: 19px;
+}
+.headerContainer .header_content .MenuBtn {
+  display: flex;
+  gap: 50px;
+  color: white;
+}
+.headerContainer .header_content .MenuBtn a {
+  font-weight: 600;
+  line-height: 19px;
+}/*# sourceMappingURL=MainHeader.css.map */

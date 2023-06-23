@@ -1,0 +1,45 @@
+.headerContainer {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: transparent;
+  position: fixed;
+  top: 0px;
+  z-index: 3;
+  .header_content {
+    width: 70vw;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    .loginBtn {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: rgb(180, 180, 180);
+      background: rgba(242, 242, 242, 0.1);
+      border: 1px solid rgba(242, 242, 242, 0.2);
+      border-radius: 15px;
+      padding: 8.5px 20px;
+      cursor: pointer;
+      a {
+        font-weight: 600;
+        line-height: 19px;
+      }
+    }
+    .MenuBtn {
+      display: flex;
+      gap: 50px;
+      color: white;
+      a {
+        font-weight: 600;
+        line-height: 19px;
+      }
+    }
+  }
+}

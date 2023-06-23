@@ -1,0 +1,28 @@
+.tab_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+}
+.tab_container .tab_menu {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgb(96, 105, 117);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrapper .border_line {
+  width: 45%;
+  margin-top: 15px;
+  opacity: 0.2;
+  border-bottom: 3px solid gray;
+}/*# sourceMappingURL=TabBtn.css.map */
