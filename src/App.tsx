@@ -1,13 +1,23 @@
 import Main from "./pages/main/Main";
-import Header from "./common_components/Header";
 import Router from "./Router";
+import { useDispatch, useSelector } from "react-redux";
+import Login from "./pages/login/Login";
+import "./styles/App.css";
+import Header from "./common_components/Header";
 
 function App() {
+  const checkIsLogined = useSelector((state: any) => state?.checkLogined);
+
   return (
     <div className="App">
-      <Header />
-      <Main />
-      <Router />
+      {checkIsLogined ? (
+        <>
+          <Header />
+          <Router />
+        </>
+      ) : (
+        <Login />
+      )}
     </div>
   );
 }
