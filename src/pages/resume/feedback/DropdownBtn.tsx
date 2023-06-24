@@ -10,7 +10,10 @@ const DropdownButton = () => {
   };
 
   return (
-    <div className="dropdown">
+    <div
+      className="dropdown"
+      style={{ position: "absolute", right: "5vw", top: "70vh" }}
+    >
       <button className="dropdown-button" onClick={toggleDropdown}>
         {tabName}
       </button>
