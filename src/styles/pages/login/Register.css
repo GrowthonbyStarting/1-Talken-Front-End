@@ -1,0 +1,97 @@
+@charset "UTF-8";
+.register_container {
+  width: 37rem;
+  height: 46rem;
+  display: inline-flex;
+  padding: 4.75rem 4rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  border-radius: 16px;
+  background: var(--white, #fff);
+  /* 포트폴리오—뱃지 백그라운드 */
+  box-shadow: 0px 3.993999958px 10.0030002594px 0px rgba(0, 0, 0, 0.1);
+}
+.register_container .register_heading {
+  display: flex;
+  width: 29rem;
+  height: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.register_container .register_heading span {
+  width: 58%;
+  color: rgb(50, 52, 56);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.register_container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+.register_container form input {
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0.3;
+  border: 2px solid black;
+}
+.register_container form input:focus {
+  opacity: 1;
+}
+.register_container form input:focus::-moz-placeholder {
+  color: transparent;
+}
+.register_container form input:focus::placeholder {
+  color: transparent;
+}
+.register_container form .agree_box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1rem 0;
+  gap: 0.75rem;
+  align-self: stretch;
+}
+.register_container form .agree_box input {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+.register_container form .agree_box .borderline {
+  width: 100%;
+  height: 0.0625rem;
+  margin: 0.8rem 0;
+  opacity: 0.3;
+  background-color: #929395;
+}
+.register_container form .agree_box .check_box_first {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.register_container form .agree_box .check_box_second {
+  display: flex;
+  flex-direction: row;
+}
+.register_container form .submit_btn {
+  width: 100%;
+  height: 3.18rem;
+  display: flex;
+  padding: 1rem 0rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 4px;
+  border: 1px solid var(--gray-gray-17, #e6e9ee);
+  background: var(--white, #fff);
+}
+.register_container form .submit_btn:hover {
+  border: 1px solid var(--gray-gray-17, #e6e9ee);
+  background: var(--gray-gray-17, #e6e9ee);
+}/*# sourceMappingURL=Register.css.map */

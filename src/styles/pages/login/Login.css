@@ -52,6 +52,7 @@
   cursor: pointer;
   justify-content: center;
   white-space: nowrap;
+  box-shadow: 0 1px 3.5px 0.1px rgb(118, 120, 122);
 }
 .login__StyledLoginSectionWrapper .loginbox .loginform_wrapper p {
   font-size: 15.001px;
@@ -67,7 +68,7 @@
 }
 .login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .dividingline hr {
   width: 100%;
-  border: 1px solid rgb(239, 242, 248);
+  border: 2px solid white;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -78,7 +79,7 @@
   font-weight: 600;
   color: rgb(84, 87, 94);
   position: absolute;
-  background-color: #e8e8e8;
+  background-color: #efefef;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -113,10 +114,10 @@
   transition: all 0.3s ease;
 }
 .login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .inputContainer .styledInputContainer input:focus::-moz-placeholder {
-  color: #999;
+  color: transparent;
 }
 .login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .inputContainer .styledInputContainer input:focus::placeholder {
-  color: #999;
+  color: transparent;
 }
 .login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .loginTrigger {
   display: flex;
@@ -124,9 +125,9 @@
   gap: 14px;
   align-items: center;
 }
-.login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .loginTrigger button {
+.login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .loginTrigger .to_register {
   background-color: #e8e8e8;
-  border: 1px solid rgb(118, 120, 122);
+  box-shadow: 0 1px 1px 0 rgb(118, 120, 122);
   color: rgb(84, 87, 94);
   border-radius: 15px;
   font-size: 18px;
@@ -134,6 +135,7 @@
   font-weight: 600;
   padding: 15.001px 108px;
   width: 100%;
+  text-align: center;
   cursor: pointer;
   white-space: nowrap;
 }

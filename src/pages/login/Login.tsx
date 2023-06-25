@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "../../styles/pages/login/Login.css";
 import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
@@ -38,14 +37,15 @@ export default function Login() {
           </div>
           <div className="inputContainer">
             <form action="submit">
-              <label>이메일</label>
               <div className="styledInputContainer">
                 <input type="email" placeholder="이메일을 입력해주세요" />
               </div>
             </form>
           </div>
           <div className="loginTrigger">
-            <button>이메일로 계속하기</button>
+            <Link to="/users/signup" className="to_register">
+              이메일로 계속하기
+            </Link>
             <a href="">계정 정보를 잊으셨나요?</a>
           </div>
         </div>
