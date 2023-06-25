@@ -1,27 +1,38 @@
-import React, { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import "../../../styles/pages/resume/feedback/DropdownBtn.css";
 
 const DropdownButton = () => {
-  const [tabName, setTabName] = useState("포트폴리오");
+  const [tabName, setTabName] = useState<any>("포트폴리오");
   const [isOpen, setIsOpen] = useState(false);
+
+  const listRef = useRef<HTMLLIElement>(null);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
 
+  const changeName = (): void => {
+    if (listRef.current !== null) {
+      setTabName((): any => listRef.current?.value);
+    }
+  };
+
   return (
-    <div
-      className="dropdown"
-      style={{ position: "absolute", right: "5vw", top: "70vh" }}
-    >
+    <div className="dropdown">
       <button className="dropdown-button" onClick={toggleDropdown}>
         {tabName}
       </button>
       {isOpen && (
         <ul className="dropdown-menu">
-          <li>포트폴리오</li>
-          <li>이력서</li>
-          <li>자기소개서</li>
+          <li ref={listRef} onClick={changeName}>
+            포트폴리오
+          </li>
+          <li ref={listRef} onClick={changeName}>
+            이력서
+          </li>
+          <li ref={listRef} onClick={changeName}>
+            자기소개서
+          </li>
         </ul>
       )}
     </div>

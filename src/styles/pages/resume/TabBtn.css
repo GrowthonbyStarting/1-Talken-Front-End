@@ -1,12 +1,11 @@
 .tab_container {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: center;
   -webkit-box-align: center;
-  position: relative;
 }
 .tab_container .menu_container {
-  width: 55%;
+  width: 100%;
   display: flex;
   gap: 40px;
   align-items: center;
@@ -19,12 +18,11 @@
 .tab_container .menu_container .tab_menu {
   text-align: center;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 15px;
+  font-size: 0.9rem;
   color: rgb(96, 105, 117);
   display: flex;
   align-items: center;
-  padding: 0.8rem 0.1rem;
+  padding: 0.5rem 0.1rem;
   cursor: pointer;
 }
 .tab_container .menu_container .tab_menu input {
@@ -48,7 +46,7 @@
   justify-content: center;
 }
 .wrapper .border_line {
-  width: 55%;
+  width: 100%;
   margin-top: 15px;
   opacity: 0.2;
   border-bottom: 3px solid gray;

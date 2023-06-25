@@ -7,6 +7,7 @@ import Portfolio from "./Portfolio";
 import MyResume from "./MyResume";
 import Jasoseo from "./Jasoseo";
 import Feedback from "./Feedback";
+import SideContent from "./feedback/SideContent";
 
 export default function Resume() {
   const tabNum = useSelector((state: any) => state?.tab);
@@ -19,20 +20,27 @@ export default function Resume() {
   };
 
   return (
-    <div className="view_container">
+    <>
       <Header />
       <div className="view_background"></div>
-      <div className="view_content_container">
+      <div className="view_container">
         <div className="profilebar_Wrapper">
           <ProfileBar />
         </div>
-        <div className="content_box">
-          <div className="tab_btn_wrapper">
-            <TabBtn />
+        <div className="view_content_container">
+          <div className="content_box">
+            <div className="tab_btn_wrapper">
+              <TabBtn />
+            </div>
+            {tabHandler()}
           </div>
-          {tabHandler()}
         </div>
+        {tabNum === 4 ? (
+          <div className="sidecontent_box">
+            <SideContent />
+          </div>
+        ) : null}
       </div>
-    </div>
+    </>
   );
 }
