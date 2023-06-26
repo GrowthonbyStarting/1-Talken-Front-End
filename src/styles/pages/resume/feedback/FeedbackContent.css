@@ -1,0 +1,10 @@
+.FeedbackContent_container {
+  height: 40rem;
+  margin-top: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+  border-radius: 20px;
+  background-color: white;
+}
+.FeedbackContent_container span {
+  margin: 1rem;
+}/*# sourceMappingURL=FeedbackContent.css.map */

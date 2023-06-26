@@ -7,7 +7,7 @@ import Portfolio from "./Portfolio";
 import MyResume from "./MyResume";
 import Jasoseo from "./Jasoseo";
 import Feedback from "./Feedback";
-import SideContent from "./feedback/SideContent";
+import SideContentBox from "./feedback/SideContentBox";
 
 export default function Resume() {
   const tabNum = useSelector((state: any) => state?.tab);
@@ -36,8 +36,8 @@ export default function Resume() {
           </div>
         </div>
         {tabNum === 4 ? (
-          <div className="sidecontent_box">
-            <SideContent />
+          <div className="sidecontent_container">
+            <SideContentBox />
           </div>
         ) : null}
       </div>

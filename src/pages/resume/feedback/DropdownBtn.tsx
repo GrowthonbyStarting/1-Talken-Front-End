@@ -12,15 +12,20 @@ const DropdownButton = () => {
   };
 
   const changeName = (): void => {
-    if (listRef.current !== null) {
-      setTabName((): any => listRef.current?.value);
-    }
+    // if (listRef.current !== null) {
+    //   setTabName((): any => listRef.current?.value);
+    // }
+    console.log("clicked");
+    setIsOpen(!isOpen);
   };
 
   return (
     <div className="dropdown">
       <button className="dropdown-button" onClick={toggleDropdown}>
         {tabName}
+        <div>
+          <img src="\assets\images\dropdown_btn_icon.png" alt="down_arrow" />
+        </div>
       </button>
       {isOpen && (
         <ul className="dropdown-menu">

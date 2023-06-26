@@ -20,6 +20,7 @@
   padding-bottom: 269px;
   .view_content_container {
     display: flex;
+    height: 100%;
     min-height: calc(1000px);
     .profilebar_wrapper {
       width: 100%;
@@ -27,6 +28,7 @@
     }
     .content_box {
       width: 100%;
+      height: 100%;
       margin-top: 18rem;
       padding-top: 1rem;
       .tab_btn_wrapper {
@@ -37,9 +39,13 @@
       }
     }
   }
-  .sidecontent_box {
-    margin-top: 19rem;
+  .sidecontent_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 22rem;
     width: 100%;
-    padding: 0 1rem;
+    height: 70rem;
+    padding: 0 0.5rem;
   }
 }
