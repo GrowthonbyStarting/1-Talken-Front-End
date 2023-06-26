@@ -1,21 +1,25 @@
+import { useSelector } from "react-redux";
+import { Mentors } from "../../../store/models/mentors";
 import "../../../styles/pages/resume/feedback/FeedbackContent.css";
 
 export default function FeedbackContent() {
-  let feedbackData = [
-    { name: "mentor name1", comment: "bla bla bla1" },
-    { name: "mentor name2", comment: "bla bla bla2" },
-  ];
+  const feedbackData = useSelector((state: any) => state.mentorsData.data);
+
   return (
     <div className="FeedbackContent_container">
-      <span>
-        <p>피드백 내용</p>
-      </span>
       <div className="FeedbackContent_box">
-        {feedbackData.map((item, idx) => {
+        {feedbackData.map((item: Mentors, idx: number) => {
           return (
             <div className="FeedbackContent" key={idx}>
-              <span className="mentor_name">{item.name}</span>
-              <div className="mentor_feedback">{item.comment}</div>
+              <div className="mentor_info">
+                <span className="mentor_img">
+                  <img src="" alt="" />
+                </span>
+                <span className="mentor_name">{item.name}</span>
+              </div>
+              <div className="feedback_box">
+                <div className="mentor_feedback">{item.comment}</div>
+              </div>
             </div>
           );
         })}
