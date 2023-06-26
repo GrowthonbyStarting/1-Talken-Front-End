@@ -6,7 +6,8 @@ initialData = [
   {
     name: "멘토1",
     career: 1,
-    comment: "bla bla bla1 bla bla bla1 bla bla bla1",
+    comment:
+      "bla bla bla1 bla bla bla1 bla bla bla1 bla1 bla bla bla1 bla1 bla bla bla1 bla1 bla bla bla1",
   },
   {
     name: "멘토2",

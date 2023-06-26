@@ -1,29 +1,28 @@
-import { useState } from "react";
-import { Document, Page, pdfjs } from "react-pdf";
+import { Page, Text, View, Document, StyleSheet } from "@react-pdf/renderer";
+
+const styles = StyleSheet.create({
+  page: {
+    flexDirection: "row",
+    backgroundColor: "#E4E4E4",
+  },
+  section: {
+    margin: 10,
+    padding: 10,
+    flexGrow: 1,
+  },
+});
 
 export default function PdfViewer() {
-  const [numPages, setNumPages] = useState<any>(null);
-  const [pageNumber, setPageNumber] = useState(1);
-  //   const url = (pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  //     "Balance Place. PPT.pdf",
-  //     import.meta.url
-  //   ).toString());
-
-  function onDocumentLoadSuccess({ numPages }: { numPages: number }) {
-    setNumPages(numPages);
-  }
-
   return (
-    <div>
-      {/* <Document
-        file="public\assets\others\Balance Place. PPT.pdf"
-        onLoadSuccess={onDocumentLoadSuccess}
-      >
-        <Page pageNumber={pageNumber} />
-      </Document> */}
-      <p>
-        Page {pageNumber} of {numPages}
-      </p>
-    </div>
+    <Document pageLayout="singlePage">
+      <Page size="A4" style={styles.page}>
+        <View style={styles.section}>
+          <Text>Section #1</Text>
+        </View>
+        <View style={styles.section}>
+          <Text>Section #2</Text>
+        </View>
+      </Page>
+    </Document>
   );
 }

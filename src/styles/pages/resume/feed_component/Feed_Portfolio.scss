@@ -1,7 +1,64 @@
 .Feed_Portfolio_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 95%;
-  height: 88rem;
+  height: fit-content;
+  padding-top: 1rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
   border-radius: 4px;
   background: var(--white, #fff);
+  .project_name {
+    width: 80%;
+    height: 3.8rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: start;
+  }
+  .project_info {
+    display: flex;
+    width: 95%;
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    border-radius: 12px;
+    background: var(--gray-gray-21, #f7f8fa);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+    .info_badge {
+      span {
+        margin: 1rem;
+      }
+    }
+    .info_specific {
+      display: flex;
+      flex-direction: row;
+      width: fit-content;
+      height: 2.75rem;
+      .info_specific_all {
+        width: fit-content;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        font-weight: 600;
+        .info_specific_top {
+          font-size: 0.5rem;
+          border-bottom: 1px solid black;
+        }
+        .info_specific_bottom {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .project_description_container {
+    width: 95%;
+    margin: 2rem 0;
+    height: 40rem;
+    border-radius: 12px;
+    background: var(--gray-gray-21, #f7f8fa);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+  }
 }
