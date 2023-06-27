@@ -87,7 +87,7 @@
 }
 .login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .inputContainer {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .inputContainer .styledInputContainer input {
   width: 100%;
@@ -119,6 +119,11 @@
 .login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .inputContainer .styledInputContainer input:focus::placeholder {
   color: transparent;
 }
+.login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .inputContainer .styledInputContainer .label_container {
+  width: 100%;
+  padding-top: 0.3rem;
+  text-align: center;
+}
 .login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .loginTrigger {
   display: flex;
   flex-direction: column;
@@ -127,9 +132,10 @@
 }
 .login__StyledLoginSectionWrapper .loginbox .loginform_wrapper .loginTrigger .to_register {
   background-color: #e8e8e8;
-  box-shadow: 0 1px 1px 0 rgb(118, 120, 122);
+  box-shadow: 0 0.3px 3px 0 rgb(118, 120, 122);
   color: rgb(84, 87, 94);
   border-radius: 15px;
+  border: none;
   font-size: 18px;
   line-height: 24px;
   font-weight: 600;

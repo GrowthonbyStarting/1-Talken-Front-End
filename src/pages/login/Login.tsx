@@ -1,12 +1,50 @@
+import { useState, useRef } from "react";
 import { useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { kakaoAuthUrl } from "../../kakaoData";
 import "../../styles/pages/login/Login.css";
 
 export default function Login() {
+  const [email, setEmail] = useState("");
+  // 오류 메세지
+  const [emailMessage, setEmailMessage] = useState("");
+  // 유효성 검사
+  const [emailValid, setEmailValid] = useState(false);
+
+  //입력 요소 컨트롤
+  const emailRef = useRef<HTMLInputElement>(null);
+  const navigate = useNavigate();
+
   const loginHandler = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     window.location.href = kakaoAuthUrl;
+  };
+
+  const handleEmail = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const emailRegex =
+      /([\w-.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+    const emailCurrent = e.target.value;
+    setEmail(emailCurrent);
+
+    if (!emailRegex.test(emailCurrent)) {
+      setEmailMessage("이메일 형식이 틀렸어요! 다시 확인해주세요 😢");
+      setEmailValid(false);
+    } else {
+      setEmailMessage("올바른 이메일 형식이에요 😊");
+      setEmailValid(true);
+    }
+  };
+
+  const loginOrSignUp = () => {
+    if (emailRef.current?.value === "" || !emailValid) {
+      window.alert("이메일을 다시 입력하여주세요!!");
+    } else {
+      // 가입된 이메일 있는지 백에서 확인, 있으면 비밀번호 입력창 : 없으면 회원가입 페이지로 보내는 로직
+      //
+      //없는 경우
+      window.localStorage.setItem("email", `${emailRef.current?.value}`);
+      navigate("/users/signup");
+    }
   };
 
   return (
@@ -35,14 +73,23 @@ export default function Login() {
           <div className="inputContainer">
             <form action="submit">
               <div className="styledInputContainer">
-                <input type="email" placeholder="이메일을 입력해주세요" />
+                <input
+                  name="email"
+                  type="email"
+                  placeholder={"이메일을 입력해주세요"}
+                  onChange={handleEmail}
+                  ref={emailRef}
+                />
+                <div className="label_container">
+                  <label htmlFor="email">{emailMessage}</label>
+                </div>
               </div>
             </form>
           </div>
           <div className="loginTrigger">
-            <Link to="/users/signup" className="to_register">
+            <button className="to_register" onClick={loginOrSignUp}>
               이메일로 계속하기
-            </Link>
+            </button>
             <a href="">계정 정보를 잊으셨나요?</a>
           </div>
         </div>

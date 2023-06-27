@@ -1,14 +1,23 @@
+import { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../../styles/pages/login/Register.css";
 
 const RegisterBox = () => {
+  const [emailValue, setEmailValue] = useState("");
   const navigate = useNavigate();
-  // const submitHandler = (e: any) => {
-  //   e.preventDefault();
-  //   //회원가입이 성공하면 페이지 이동 처리하는 로직 구역
-  //   //------
-  //   navigate("/");
-  // };
+  const submitHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    //백에 post요청 이후 회원가입이 성공하면 페이지 이동 처리하는 로직 구역
+    //------
+    navigate("/");
+  };
+
+  useEffect(() => {
+    let prevEmail: string | null = window.localStorage.getItem("email");
+    if (prevEmail !== null) {
+      setEmailValue(prevEmail);
+    }
+  }, []);
 
   return (
     <div className="register_container">
@@ -20,12 +29,7 @@ const RegisterBox = () => {
       </div>
       <form action="/">
         <label htmlFor="email">이메일</label>
-        <input
-          type="email"
-          name="email"
-          placeholder="abc123@mommit.com"
-          required
-        />
+        <input type="email" name="email" value={emailValue} disabled />
         <label htmlFor="name">이름</label>
         <input
           type="text"
@@ -58,7 +62,9 @@ const RegisterBox = () => {
             <label htmlFor="second">개인정보 수집 및 이용동의 (필수)</label>
           </div>
         </div>
-        <button className="submit_btn">다음</button>
+        <button className="submit_btn" onClick={submitHandler}>
+          다음
+        </button>
       </form>
     </div>
   );
