@@ -1,7 +1,7 @@
 import { PDFViewer } from "@react-pdf/renderer";
 import PdfViewer from "./PdfViewer";
-import "../../../styles/pages/resume/feed_component/Feed_Portfolio.css";
 import { Portfolios } from "../../../store/models/portfolios";
+import "../../../styles/pages/resume/feed_component/Feed_Portfolio.css";
 
 export default function Feed_Portfolio({ data }: { data: Portfolios }) {
   return (
@@ -13,8 +13,8 @@ export default function Feed_Portfolio({ data }: { data: Portfolios }) {
 
       <div className="project_info">
         <div className="info_badge">
-          <span>인원 뱃지</span>
-          <span>역할 뱃지</span>
+          <span className="contributor_badge">팀 {6} 명</span>
+          <span className="role_badge">{"디자인 총괄"}</span>
         </div>
         <div className="info_specific">
           <div className="info_specific_all">

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .Feed_Portfolio_container {
   display: flex;
   flex-direction: column;
@@ -30,8 +31,45 @@
   background: var(--gray-gray-21, #f7f8fa);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
 }
+.Feed_Portfolio_container .project_info .info_badge {
+  display: flex;
+  flex-direction: row;
+}
 .Feed_Portfolio_container .project_info .info_badge span {
-  margin: 1rem;
+  margin: 0.25rem;
+}
+.Feed_Portfolio_container .project_info .info_badge .contributor_badge {
+  color: rgb(134, 33, 246);
+  display: flex;
+  width: 4rem;
+  height: 1.5rem;
+  padding: 0.3rem 0 0.3rem 1.2rem;
+  align-items: center;
+  gap: 0.125rem;
+  border-radius: 4px;
+  border: 1px solid var(--purple-purple-01, #8621f6);
+  background: var(--purple-purple-06, #f8f1ff);
+  background-image: url(/public/assets/images/people_outline.png);
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  color: var(--purple-purple-01, #8621f6);
+  font-size: 0.5rem;
+  font-family: Pretendard;
+  font-weight: 600;
+}
+.Feed_Portfolio_container .project_info .info_badge .role_badge {
+  display: flex;
+  height: 1.5rem;
+  padding: 0.25rem 0.3rem;
+  align-items: center;
+  gap: 0.125rem;
+  color: var(--blue-blue-01, #1a7cff);
+  border-radius: 4px;
+  border: 1px solid var(--blue-blue-01, #1a7cff);
+  background: var(--blue-blue-08, #edf7ff);
+  font-size: 0.75rem;
+  font-family: Pretendard;
+  font-weight: 600;
 }
 .Feed_Portfolio_container .project_info .info_specific {
   display: flex;
@@ -43,17 +81,23 @@
 .Feed_Portfolio_container .project_info .info_specific .info_specific_all {
   width: -moz-fit-content;
   width: fit-content;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
-  font-weight: 600;
+  margin: 0 1.5rem;
 }
 .Feed_Portfolio_container .project_info .info_specific .info_specific_all .info_specific_top {
-  font-size: 0.5rem;
-  border-bottom: 1px solid black;
+  color: var(--gray-gray-14, #bec2c9);
+  /* Body09/✅B_14px */
+  font-size: 0.8rem;
+  font-family: Pretendard;
+  font-weight: 400;
 }
 .Feed_Portfolio_container .project_info .info_specific .info_specific_all .info_specific_bottom {
+  color: var(--gray-gray-08, #606975);
+  /* Body07/✅M_16px */
   font-size: 1rem;
+  font-family: Pretendard;
+  font-weight: 500;
 }
 .Feed_Portfolio_container .project_description_container {
   width: 95%;
