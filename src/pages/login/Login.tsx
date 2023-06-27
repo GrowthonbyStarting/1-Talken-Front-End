@@ -1,15 +1,12 @@
-import "../../styles/pages/login/Login.css";
 import { useDispatch } from "react-redux";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { kakaoAuthUrl } from "../../kakaoData";
+import "../../styles/pages/login/Login.css";
 
 export default function Login() {
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
-
-  const loginHandler = (e: any) => {
+  const loginHandler = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    dispatch({ type: "login" });
-    navigate("/");
+    window.location.href = kakaoAuthUrl;
   };
 
   return (

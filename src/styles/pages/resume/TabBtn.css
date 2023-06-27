@@ -9,15 +9,11 @@
   display: flex;
   gap: 40px;
   align-items: center;
-  justify-content: space-around;
-  border-radius: 0.5rem;
-  background-color: #eee;
-  box-sizing: border-box;
-  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  justify-content: start;
 }
 .tab_container .menu_container .tab_menu {
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.9rem;
   color: rgb(96, 105, 117);
   display: flex;
@@ -47,13 +43,13 @@
 }
 .wrapper .border_line {
   width: 100%;
-  margin-top: 15px;
+  margin: 0.2rem 0 1rem 0;
   margin-right: 2.5rem;
   opacity: 0.2;
   border-bottom: 3px solid gray;
 }
 
 .tab_menu input:checked + .name {
-  background-color: #fff;
   font-weight: 600;
+  background-color: whitesmoke;
 }/*# sourceMappingURL=TabBtn.css.map */

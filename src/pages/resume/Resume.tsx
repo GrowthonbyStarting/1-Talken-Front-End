@@ -1,6 +1,5 @@
 import { useSelector } from "react-redux";
 import Header from "../../common_components/Header";
-import "../../styles/pages/resume/Resume.css";
 import ProfileBar from "./ProfileBar";
 import TabBtn from "./TabBtn";
 import Portfolio from "./Portfolio";
@@ -8,6 +7,7 @@ import MyResume from "./MyResume";
 import Jasoseo from "./Jasoseo";
 import Feedback from "./Feedback";
 import SideContentBox from "./feedback/SideContentBox";
+import "../../styles/pages/resume/Resume.css";
 
 export default function Resume() {
   const tabNum = useSelector((state: any) => state?.tab);
