@@ -23,7 +23,7 @@ export default function KakaoLoginPage() {
     const kakao_access_token: string = data.access_token;
 
     console.log("카카오 엑세스 토큰 발급 성공!! 토큰:", kakao_access_token);
-    //카카오 엑세스 토큰을 로컬스토리지에 저장(이것은 NaverMaps.jsx에서 사용할 예정)
+    //카카오 엑세스 토큰을 로컬스토리지에 저장
     window.localStorage.setItem("kakaoAccessToken", kakao_access_token);
 
     //세션스토리지에 로그인 여부 저장
