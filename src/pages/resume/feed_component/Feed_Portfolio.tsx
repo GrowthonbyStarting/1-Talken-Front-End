@@ -1,11 +1,12 @@
 import { PDFViewer } from "@react-pdf/renderer";
 import PdfViewer from "./PdfViewer";
 import "../../../styles/pages/resume/feed_component/Feed_Portfolio.css";
+import { Portfolios } from "../../../store/models/portfolios";
 
-export default function Feed_Portfolio() {
+export default function Feed_Portfolio({ data }: { data: Portfolios }) {
   return (
     <div className="Feed_Portfolio_container">
-      <span className="project_name">{"project name 1"}</span>
+      <span className="project_name">{data.project_name}</span>
       <PDFViewer width={600} height={300}>
         <PdfViewer />
       </PDFViewer>
@@ -18,17 +19,17 @@ export default function Feed_Portfolio() {
         <div className="info_specific">
           <div className="info_specific_all">
             <span className="info_specific_top">유형</span>
-            <span className="info_specific_bottom">기타 프로젝트</span>
+            <span className="info_specific_bottom">{data.project_type}</span>
           </div>
           <div className="info_specific_all">
             <span className="info_specific_top">기간</span>
-            <span className="info_specific_bottom">
-              2022.11 ~ 진행중(7개월)
-            </span>
+            <span className="info_specific_bottom">{data?.project_period}</span>
           </div>
           <div className="info_specific_all">
             <span className="info_specific_top">기여도</span>
-            <span className="info_specific_bottom">기여도 60%</span>
+            <span className="info_specific_bottom">
+              기여도{data.project_contribution}%
+            </span>
           </div>
         </div>
       </div>

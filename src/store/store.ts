@@ -1,10 +1,10 @@
 import { combineReducers } from "redux";
 import tab from "./modules/tab";
-import checkLogined from "./modules/login";
 import mentorsData from "./modules/mentors";
+import portfoliosData from "./modules/portfolios";
 
 export default combineReducers({
   tab,
-  checkLogined,
   mentorsData,
+  portfoliosData,
 });

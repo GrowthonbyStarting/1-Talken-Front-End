@@ -4,12 +4,14 @@ import "../../styles/pages/login/Register.css";
 
 const RegisterBox = () => {
   const [emailValue, setEmailValue] = useState("");
+
   const navigate = useNavigate();
+
   const submitHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     //백에 post요청 이후 회원가입이 성공하면 페이지 이동 처리하는 로직 구역
     //------
-    navigate("/");
+    navigate("/users/signup/selection");
   };
 
   useEffect(() => {

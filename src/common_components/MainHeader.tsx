@@ -1,9 +1,17 @@
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
 import "../styles/commonComp/MainHeader.css";
+import { useEffect, useState } from "react";
 
 export default function MainHeader() {
-  const isLogined = useSelector((state: any) => state?.checkLogined);
+  const [isLogined, setIsLogined] = useState<string | null>(
+    window.sessionStorage.getItem("isLogined")
+  );
+
+  useEffect(() => {
+    setInterval(() => {
+      setIsLogined(window.sessionStorage.getItem("isLogined"));
+    }, 300000);
+  }, []);
 
   return (
     <div className="headerContainer">

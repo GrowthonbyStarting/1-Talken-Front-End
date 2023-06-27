@@ -1,0 +1,87 @@
+@charset "UTF-8";
+.selection_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 62.75rem;
+  height: 41.6875rem;
+  padding: 4.75rem 4rem;
+  gap: 2rem;
+  background-color: white;
+  border-radius: 0.4rem;
+  box-shadow: 0 1px 3px 0 gray;
+}
+.selection_container .description {
+  display: flex;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.selection_container .description .description_big {
+  color: var(--gray-gray-04, #323438);
+  font-size: 3rem;
+  font-family: Pretendard;
+  font-weight: 800;
+}
+.selection_container .description .description_small {
+  color: var(--gray-gray-04, #323438);
+  font-size: 1rem;
+  font-family: Pretendard;
+  font-weight: 500;
+}
+.selection_container .selection_box {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.selection_container .selection_box .selection {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+.selection_container .selection_box .selection .selection_mentor,
+.selection_container .selection_box .selection .selection_mentee {
+  display: flex;
+  flex-direction: column;
+  width: 25.75rem;
+  height: 19.875rem;
+  padding: 3rem 2rem;
+  border: 0.1px solid rgb(176, 177, 177);
+  border-radius: 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+.selection_container .selection_box .selection .selection_mentor {
+  background-image: url(/public/assets/images/이력서-멘토.png);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: 95% 90%;
+}
+.selection_container .selection_box .selection .selection_mentee {
+  background-image: url(/public/assets/images/이력서-멘티.png);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: 95% 90%;
+}
+.selection_container .selection_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  width: 100%;
+  padding: 0.75rem 0rem;
+}
+.selection_container .selection_btn button {
+  display: flex;
+  width: 9.5rem;
+  padding: 0.75rem 0rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px 0px rgb(152, 151, 151);
+  cursor: pointer;
+}/*# sourceMappingURL=TorOrT.css.map */
