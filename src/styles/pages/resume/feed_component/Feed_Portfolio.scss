@@ -100,9 +100,43 @@
   .project_description_container {
     width: 95%;
     margin: 2rem 0;
+    padding: 0 1.5rem;
     height: 40rem;
     border-radius: 12px;
     background: var(--gray-gray-21, #f7f8fa);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+    .project_description_box {
+      display: flex;
+      height: 6.5rem;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      align-self: stretch;
+      margin: 2rem 1rem;
+      .project_description_title {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        align-self: stretch;
+        color: var(--gray-gray-04, #323438);
+
+        /* Body07/✅B_16px */
+        font-size: 1rem;
+        font-family: Pretendard;
+        font-weight: 700;
+      }
+      .project_description_content {
+        display: flex;
+        height: 4.5rem;
+        flex-direction: column;
+        flex: 1 0 0;
+        color: var(--gray-gray-04, #323438);
+
+        /* Body09/✅R 14px - text */
+        font-size: 0.87506rem;
+        font-family: Pretendard;
+        line-height: 1.25rem;
+      }
+    }
   }
 }

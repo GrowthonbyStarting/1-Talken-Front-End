@@ -34,7 +34,15 @@ export default function Feed_Portfolio({ data }: { data: Portfolios }) {
         </div>
       </div>
       <div className="project_description_container">
-        <div>//</div>
+        <div className="project_description_box">
+          <div className="project_description_title">프로젝트 준비 배경</div>
+          <div className="project_description_content">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident
+            sunt suscipit eaque a sequi dicta veritatis velit nostrum, ducimus
+            assumenda molestias qui maiores earum reprehenderit facilis at
+            perferendis debitis libero!
+          </div>
+        </div>
       </div>
     </div>
   );
